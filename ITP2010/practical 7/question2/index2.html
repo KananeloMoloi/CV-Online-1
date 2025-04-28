@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register2.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Register for an Account</h1>
+        <form action="confirm.html" method="get">
+            <div>
+                <label for="email_address">E-Mail:</label>
+                <input type="text" name="email_address" id="email_address" required title="Must be a valid email address" pattern="\*{@}*">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <select name="country" id="country" required>
+                    <option value="">Select a Country</option>
+                    <option>USA</option>
+                    <option>Cananda</option>
+                    <option>Mexico</option>
+                </select>
+                <span>*</span>
+            </div>
+            <div>
+                <label >Contact me by:</label>
+                <input type="radio" name="contact" id="text" value="text" checked>Text
+                <input type="radio" name="contact" id="email" value="email">Email
+                <input type="radio" name="contact" id="none" value="none">Don't contact me
+            </div>
+            <div>
+                <label>Terms of Service:</label>
+                <input type="checkbox" name="terms" id="terms" value="yes" required title="Must Agree to the terms and conditions">I accept
+                <span>*</span>
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <button onclick="myfuction3()">Register</button>
+              <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+    <script src="registercompletion2.js"></script>
+</body>
+</html>

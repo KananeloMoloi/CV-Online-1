@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <h1>FAQs Terms of service</h1>
+        <p>The terms and conditions are that you should be accept. And to continue you have to comply or you will stuck here until the you accept </p>
+        <p><input type="button" id="accept" value="I Accept"></p>
+        <script>
+            const btn = document.querySelector("#accept");
+            btn.addEventListener("click",()=> window.location.href= "index1.html?accepted=true")
+        </script>
+    </main>
+</body>
+</html>

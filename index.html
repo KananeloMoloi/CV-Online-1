@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Kananelo Moloi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Kananelo Moloi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Profile 1.jpg" alt="Kananelo Moloi profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Kananelo Moloi</h1>
+            <p class="section__text__p2">Student of Nelson Mandela</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')"> Download Cv</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contacts'"> Contact info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/martin-moloi-7161ab277/?lipi=urn%3Ali%3Apage%3Ad_flagship3_trust_verifications_email%3B0XJDKyd9S7O9OnPxawBf6g%3D%3D'">
+                <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/KananeloMoloi'">
+            </div>
+            
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="socials-container">
+            <div class="section__pic-container">
+                <img src="./assets/about.jpg" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p> 3+ year <br> microsoft office</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Higher Cert IT <br> Still a student at the Nelson Mandela University <br> 2nd year software develpment</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I was born in small town called QwaqQwa in Free State where i did attend my school from primary till high school until i went to Eastern cape to feather my studyies. <br>Am a percistant person who likes team work and loves to socialize and learn new things. <br>
+                    I have worked for a sound company before in my teen years for 2+ years <br>
+                    Soon to graduate and get my diploma.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Experience'">
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

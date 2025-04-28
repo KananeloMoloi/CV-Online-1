@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form action="formStyle.css">
+        <p>Name:<br>
+        <input type="text" required placeholder="Kananelo">
+        </p>    
+        <p>Surname:<br>
+        <input type="text" required placeholder="Moloi">
+        </p>
+        <p>Gender:<br>
+        <input type="radio" name="female-1" id="female__1">Female<br>
+        <input type="radio" name="male-1" id="male__1">Male <br>
+        </p>
+        <p>Cell Number:<br>
+        <input type="text" name="cellNumber" id="cellNumbe-1" required autocomplete="off" size="10" pattern="\d{10}"title="Must be 0123456789" placeholder="0715689987"><br>
+        </p>
+        <p>Email: <br> <input type="email" name="email-1" id="email_1" required pattern="\*{@}\*" title="Must be example@gmail.com" placeholder="example@gmail.com"></p>
+        <p>Qualification<br>
+            <select name="qualification-1" id="qualification__1"  >
+                <optgroup label="Information Tecnology">
+                    <option value="Support service">Support service</option>
+                    <option value="Communication Networks">Communication Networks</option>
+                    <option value="Software Development">Software Development</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>Job Interests: <br>
+                <input type="checkbox" name="Technical Support" id="tech-support">Technical Support personeel<br>
+                <input type="checkbox" name="Desktop Engineer" id="desktop-eng">Desktop Engineer<br>
+                <input type="checkbox" name="Network Administrator" id="net-admin">Network Administrator<br>
+                <input type="checkbox" name="Cloud Developer" id="cloud-dev">Cloud Developer<br>
+                <input type="checkbox" name="System analyst" id="system-analyst">System analyst<br>
+                <input type="checkbox" name="Software Engineer" id="Software-eng">Software Engineer<br>
+                <input type="checkbox" name="Solutions Architect" id="Solutions-arch">Solutions Architect<br>
+        </p>
+    <input type="submit" value="Submit Application"><br><br>
+    <input type="reset" value="Reset Fields">
+    </form>
+    
+</body>
+</html>
